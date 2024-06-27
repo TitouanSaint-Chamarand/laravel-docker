@@ -15,6 +15,7 @@
         "vite": "^5.3.1"
     },
     "dependencies": {
+        "doodle.css": "^0.0.2",
         "vue": "^3.4.30"
     }
 }
