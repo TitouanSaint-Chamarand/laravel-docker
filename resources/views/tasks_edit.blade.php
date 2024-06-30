@@ -8,6 +8,21 @@
     <title>Document</title>
 </head>
 <body>
+<form action="{{url('tasks/edit/'. $tasks->id )}}" method="post">
+    @csrf
+    @method('PUT')
+    <input type="text" name="title" value="{{$tasks->title}}">
+    <input type="datetime-local" name="date" value="{{$tasks->end_date}}">
+
+    <button type="submit">Envoyer</button>
+
+
+</form>
+<form action="{{url('tasks/delete/'. $tasks->id )}}" method="post">
+    @csrf
+    @method('delete')
+    <button type="submit">Supprimer</button>
+</form>
 
 </body>
 </html>
